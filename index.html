@@ -1,1 +1,61 @@
-<h1>{{ message }}</h1>
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Cloud PoC</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #0f172a, #1e293b);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 0 40px rgba(0,0,0,0.5);
+        }
+
+        h1 {
+            margin-bottom: 10px;
+            font-size: 28px;
+        }
+
+        p {
+            opacity: 0.8;
+        }
+
+        .badge {
+            margin-top: 20px;
+            padding: 8px 15px;
+            border-radius: 20px;
+            background: #22c55e;
+            color: black;
+            font-weight: bold;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="card">
+    <h1>{{ message }}</h1>
+    <p>Docker + Flask PoC Projesi</p>
+
+    <div class="badge">
+        ✔ Container Running
+    </div>
+</div>
+
+</body>
+</html>
